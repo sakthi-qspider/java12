@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [gridparallelexecution]" parallel="tests">
+  <test name="chromeTest(failed)" parallel="tests">
+    <parameter name="node" value=" http://localhost:4444/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="assment.gridexecution">
+        <methods>
+          <include name="testapplication"/>
+          <include name="openapplication"/>
+          <include name="closeapplication"/>
+        </methods>
+      </class> <!-- assment.gridexecution -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="firefoxTest(failed)" parallel="tests">
+    <parameter name="node" value=" http://localhost:4444/wd/hub"/>
+    <parameter name="browser" value="firfox"/>
+    <classes>
+      <class name="assment.gridexecution">
+        <methods>
+          <include name="testapplication"/>
+          <include name="openapplication"/>
+          <include name="closeapplication"/>
+        </methods>
+      </class> <!-- assment.gridexecution -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [gridparallelexecution] -->
