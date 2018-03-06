@@ -7,7 +7,7 @@
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
+        <artifactId>compiler</artifactId>
         <version>3.6.1</version>
         <configuration>
           <source>1.8</source>
